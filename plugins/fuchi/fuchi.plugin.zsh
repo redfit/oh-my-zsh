@@ -3,7 +3,12 @@ c() { cd ~/projects/$1;  }
 _c() { _files -W ~/projects -/; }
 compdef _c c
 
-s() { cd ~/study/$1;  }
+e() { cd ~/everyleaf/$1;  }
 
-_s() { _files -W ~/study -/; }
-compdef _s s
+_e() { _files -W ~/everyleaf -/; }
+compdef _e e
+
+old() { cd ~/Documents/fuchi/railsproject/$1;  }
+
+_old() { _files -W ~/Documents/fuchi/railsproject -/; }
+compdef _old old
